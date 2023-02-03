@@ -1,94 +1,403 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="favicon.ico" />
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Diptanshu Mann</title>
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-    <script defer type="text/javascript" src="js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/animations.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <style>
-         ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            background-color: #2C5364;
-        }
-        
-         ::-webkit-scrollbar {
-            width: 12px;
-            background-color: #2C5364;
-        }
-        
-         ::-webkit-scrollbar-thumb {
-            border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-            background-color: rgb(63, 61, 61);
-        }
-    </style>
-</head>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-<body>
-    <div id="wallpaper" class="wallpaper"></div>
-    <div class="content">
-        <aside class="side">
-            <figure id="picture" class="picture">
-                <div class="picture-shadow"></div>
-                <img id="pictureImage" class="picture-image" src="images/IMG1.png" alt="Portrait of Diptanshu Mann" width="320" height="320">
-            </figure>
-        </aside>
-        <main class="about">
-            <h1 class="name">
-                Hi, I'm Diptanshu Mann
-            </h1>
-            &nbsp;
-            <p class="job">
-                Developer | Innovator
-            </p>
-            <hr class="hr">
-            <div class="description">
-                <p>
-                    I am a master's student in robotics at the University of Bristol. Being an avid tech enthusiast, my passion revolves around robotics, AI, and IOT. I completed my bachelor's degree in ECE-IoT.
-                    I strive to grow every day as a person and as a professional.
-                </p>
-            </div>
-            <div class="contact">
-                <a class="button" href="mailto:manndiptanshu@gmail.com">
-    Get in touch
-    </a>
-            </div>
-            <ul class="social">
-                <li>
-                    <a href="https://www.linkedin.com/in/diptanshumann/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/diptanshumann/" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/diptanshumann/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-            </ul>
+        <title>Diptanshu Mann</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">DM</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="mailto:diptanshu@duck.com" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Diptanshu</span><br> Robotics Engineer</h1>
+
+                    <a href="mailto:diptanshu@duck.com" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/diptanshumann/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://twitter.com/diptanshumann/" target="_blank" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="40" href="assets/img/DM_0.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/rob.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Diptanshu Mann</h2>
+                        <p class="about__text">A master's student in robotics at the University of Bristol. Being an avid tech enthusiast, my passion revolves around robotics, AI, and IoT. I completed my bachelor's degree in ECE-IoT. I strive to grow every day as a person and as a professional. </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== Education =====-->
+            <section class="education section " id="education">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2022-Present</h5>
+                        <span class="item-company">University of Bristol, United Kingdom</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">MSc Robotics</h4>
+                        <p>Currently studying Robotics as my Masters degree.<br> Studied Key modules like: Robotics Fundamentals | Robotics Systems | Machine Vision | Robotics Research Technology and Methods | Introduction to Artificial Intelligence | Human-Robot Interaction | Intelligent Information Systems | Assistive Robotics. </p>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2017-2021</h5>
+                        <span class="item-company">Manav Rachna International Institute of Research and Studies, India</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">B.Tech Electronics and Communications Engineering with specialization in Internet of things</h4>
+                        <p>I earned a 1st Class Honours grade in my Bachelors degree in ECE with specialization in IoT.<br> Studied Key modules like: Applied Mathematics | Applied Physics | Analog Electronics | Signals & Systems | Digital Electronics and Circuits | Data Structures and Algorithms | Hardware Digital Design | Hardware Digital Design | Control Engineering | Microcontroller and Interfacing | Object Oriented Programming using java | Internet of things | IoT Design, Analytics and Security</p>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+            <!--===== Experience =====-->
+            <section class="experience section " id="experience">
+                <h2 class="section-title">Experience</h2>
+              
+                <div class="timeline timeline-second-style clearfix">
+                <div class="timeline-item clearfix">
+                  <div class="left-part">
+                    <h5 class="item-period">Jun'21 - Jun'22</h5>
+                    <span class="item-company">Tata Consultancy Services, Delhi, IN</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="right-part">
+                    <h4 class="item-title">Assistant System Engineer</h4>
+                    <p> Worked with a team of 6 engineers in designing network typologies as part of the EIS and IoT team.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-item clearfix">
+                  <div class="left-part">
+                    <h5 class="item-period">Jun'19 - Jul'19</h5>
+                    <span class="item-company">Yamaha Motor Solutions India, Faridabad, IN</span>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="right-part">
+                    <h4 class="item-title">Summer Intern</h4>
+                    <p> Worked at the innovation lab, wherein i	developed, deployed and tested Amazon Alexa Skills for IoT systems.</p>
+                  </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">      
+                        <div>
+                        <h2 class="skills__subtitle">Programming Skills</h2>
+                        <p class="skills__text"></p>
+                        
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Machine Learning</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">OpenCV</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h2 class="skills__subtitle">Tools/Libraries known</h2>
+                        <p class="skills__text"></p>
+              
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Pandas | NumPy</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Tensorflow</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Keras</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Scikit-Learn</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+                
+                <div class="work__container bd-grid">
+                    
+                    <div class="container" id="myImg1">
+                        <img class="work__img" id="myImg1" src="assets/img/apple_count.png" alt="image">
+                        <div class="overlay">
+                          <div class="textoverlay">
+                            <b>Apple Counting in an Orchard using ML:</b><br>
+                            Click to read more...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container" id="myImg2">
+                        <img class="work__img" id="myImg2" src="assets/img/MediPort.png" alt="image">
+                        <div class="overlay">
+                            <div class="textoverlay">
+                                <b>MediPort: Cold Chain Solution for Medicines</b><br>
+                                Click to read more...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container" id="myImg3">
+                        <img class="work__img" id="myImg3" src="assets/img/KLON.png" alt="image">
+                        <div class="overlay">
+                          <div class="textoverlay">
+                            <b>KLON: Smart Mirror</b><br>
+                            Click to read more...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container" id="myImg4">
+                        <img class="work__img" id="myImg4" src="assets/img/Dog_breed.png" alt="image">
+                        <div class="overlay">
+                            <div class="textoverlay">
+                                <b>Dog Breed Detection:</b><br>
+                                Click to read more...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container" id="myImg5">
+                        <img class="work__img" id="myImg5" src="assets/img/pololu.png" alt="image">
+                        <div class="overlay">
+                          <div class="textoverlay">
+                            <b>Path Mapping and Enhanced Line Following on Pololu 3pi+:</b><br>
+                            Click to read more...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container" id="myImg6">
+                        <img class="work__img" id="myImg6" src="assets/img/heart_ill.png" alt="image">
+                        <div class="overlay">
+                          <div class="textoverlay">
+                            <b>Heart Disease Prediction</b><br>
+                            Click to read more...
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- PopUp's  -->
+                    <div id="myPopup1" class="popup">
+                        <span class="close">&times;</span>
+                        <p align="justify">
+                        <b>Apple Counting in an Orchard using Machine Learning:</b><br><br>
+                        The project utilized machine learning models for accurately counting apples in an orchard, thus helping with inventory management and increasing efficiency. The minneapple dataset was used to train and test the model. In the process i compared various different models to find the most suitable one and also compared the results of the same with conventional image classification techniques.
+                        </p>
+                    </div>
+                    
+                    <div id="myPopup2" class="popup">
+                        <span class="close">&times;</span>
+                        <p align="justify">
+                            <b>MediPort:</b><br><br>
+                            The Mediport system is an intelligent monitoring solution that helps maintain the effectiveness of vaccines based on their storage conditions during logistics. Certain medicines must be kept in a specific temperature range, which is essential for their effectiveness. While transporting the medicines from the factories to the final destination, the Mediport device will provide us with the temperature reading of the in-built refrigerator, which is then connected to the internet so that the admin can track the container's location. This real-time monitoring system can also be provided to the users as a simple mobile application. 
+                            In addition to that, The device also functions offline by storing the data in the memory when it gets disconnected, and as soon as the system is online, the stored data is sent to the cloud. The Artificial Intelligence system that runs on the cloud also monitors the shipments' continuous track and detects any supply chain flaw that could lead to a loss in the effectiveness of the medicines. These flaws detected by AI can then be addressed on time, preventing further complications and ensuring the smooth and effective functioning of the medicine procurement process.
+                            <br><br>
+                            This project advanced our team to the National Finals of the Microsoft Imagine Cup-2021.<br> 
+                            Video:
+                            <a href="https://www.youtube.com/watch?v=H8Gk7xeYpxM" target="_blank">https://www.youtube.com/watch?v=H8Gk7xeYpxM</a>  
+                        </p>
+                    </div>
+                    
+                    <div id="myPopup3" class="popup">
+                        <span class="close">&times;</span>
+                        <p align="justify">
+                            <b>KLON: Smart Mirror:</b><br><br>
+                            KLON was an Internet of Things-based smart home system. It allowed users to access information as well as control various smart home devices. All the relevant information such as the time and date, weather, warning, traffic, music, email, etc was available to the user at a glance. The mirror utilized Amazon Alexa Voice services(AVS) as a medium of interaction between the user and the system.
+                            The users could also change the themes of the mirror using the mobile app.
+                            The mirror was powered by a Raspberry Pi 3b+ that was linked to various sensors, a speaker, and a microphone. Overall, The mirror was helpful to the users as they could manage their daily activities more easily with the system, while managing their routine house chores. 
+                            <br><br>
+                            Video:
+                            <a href="https://www.youtube.com/watch?v=fcaue87uD0A" target="_blank">https://www.youtube.com/watch?v=fcaue87uD0A</a> 
+                        </p>
+                    </div>
+                    
+                    <div id="myPopup4" class="popup">
+                        <span class="close">&times;</span>
+                        <p align="justify">
+                            <b>Dog Breed Detection:</b><br><br>
+                            Constructed an algorithm that works with images supplied by the user.
+                            If a dog is detected, it estimates the breed. It is trained using Transfer learning with CNN.
+                            The Classifier was able to classify a dog image among 120 breeds after being trained with 82% accuracy using Transfer learning with CNN . 
+                        </p>
+                    </div>
+                    
+                    <div id="myPopup5" class="popup">
+                        <span class="close">&times;</span>
+                        <p align="justify">
+                            <b>Path Mapping and Enhanced Line Following on Pololu 3pi+:</b><br><br>
+                            The project utilized an event-based way-point creation system to map the task environment while line-following and use this data to improve the line-following performance on subsequent traversals.
+                            The systems performance was gauged and analyzed using 2 parameters that are travel time and absolute trajectory error percentage. With the improved system there was an improvement in efficiency of approximately
+                            33.63% across different maps on an average.
+                            <br><br>
+                            Video:
+                            <a href="https://www.youtube.com/watch?v=3GMmZnCRY10" target="_blank">https://www.youtube.com/watch?v=3GMmZnCRY10</a> 
+                        </p>
+                    </div>
+                    
+                    <div id="myPopup6" class="popup">
+                        <span class="close">&times;</span>
+                        <p align="justify">
+                            <b> Heart Disease Prediction:</b><br><br>
+                            The goal of this project was to use a classification model to predict heart disease events using 11 clinical features.
+                            The Random Forest Classifier produced the highest accuracy.
+                            Based on the health parameters, the model predicts whether a person will develop a heart condition. 
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
-    </div>
-    <noscript>
-        <style type="text/css">
-        .wallpaper {
-        animation-name: zoomOut;
-        }
-        .picture {
-        animation-name: dropIn;
-        }
-        </style>
-        </noscript>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Diptanshu Mann</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/diptanshumann/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://twitter.com/diptanshumann/" target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
