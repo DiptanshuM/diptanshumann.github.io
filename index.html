@@ -41,9 +41,9 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Diptanshu</span><br> Robotics & <br> AI Engineer</h1>
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Diptanshu</span><br> Robotics & <br> ML Engineer</h1>
 
-                    <a href="mailto:diptanshu@duck.com" class="button">Contact</a>
+                    <a id="email" class="button" href=" " onclick='openMailer(this);'>Contact</a>
                 </div>
 
                 <div class="home__social">
@@ -399,5 +399,21 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+            
+        <script type="text/javascript">
+            function decode(a) {
+                return a.replace(/[a-zA-Z]/g, function(c){
+                return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) 
+                                           ? c : c - 26);
+                })
+            }; 
+            function openMailer(element) {
+            var y = decode("znvygb:znaaqvcgnafuh@tznvy.pbz");
+            element.setAttribute("href", y);
+            element.setAttribute("onclick", "");
+            element.firstChild.nodeValue = "Open e-mail software";
+            };
+        </script>
+
     </body>
 </html>
