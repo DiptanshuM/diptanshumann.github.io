@@ -1,7 +1,7 @@
 /*===== Popup on img click =====*/ 
 
-// Add event listeners to 6 images
-for (var i = 1; i <= 6; i++) {
+// Add event listeners to 9 images
+for (var i = 1; i <= 9; i++) {
 document.getElementById("myImg" + i).addEventListener("click", function() {
     var currentPopup = document.getElementById("myPopup" + this.id.slice(-1));
     var allPopups = document.querySelectorAll(".popup");
@@ -14,8 +14,8 @@ document.getElementById("myImg" + i).addEventListener("click", function() {
 });
 }
 
-// Add event listeners to 6 close buttons
-for (var i = 1; i <= 6; i++) {
+// Add event listeners to 9 close buttons
+for (var i = 1; i <= 9; i++) {
 document.getElementById("myPopup" + i).addEventListener("click", function(event) {
     if (event.target === this) {
     this.style.display = "none";
@@ -81,4 +81,4 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
